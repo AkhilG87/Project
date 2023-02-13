@@ -1,0 +1,25 @@
+.write {
+  display: flex;
+  flex-direction: column;
+  margin: 3.625em;
+  gap: 2em;
+
+  label {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  input {
+    padding: 10px;
+  }
+  .publish {
+    align-self: center;
+    width: 10%;
+    padding: 10px;
+    background-color: #1a8917;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,49 @@
+.home {
+  background: #ffc017;
+  border-bottom: 1px solid black;
+  padding: 0 3.625em;
+  .first {
+    height: 455px;
+    display: flex;
+
+    .left {
+      flex: 2;
+      padding: 92px 0;
+      display: flex;
+      .hh {
+        width: 500px;
+        h1 {
+          font-weight: normal;
+          margin: 0;
+          font-size: 106px;
+          letter-spacing: -0.05em;
+          line-height: 95px;
+          color: rgba(8, 8, 8, 1);
+        }
+        p {
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 1em;
+          margin-top: 1.3em;
+        }
+        .btn {
+          background: black;
+          color: white;
+          width: 100px;
+          padding: 0.7em 1em;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          margin-top: 3.2em;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      img {
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}

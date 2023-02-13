@@ -1,0 +1,67 @@
+.navbar {
+  transition: 0.3s ease-out;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: yellow;
+  background: #ffc017;
+  height: 75px;
+  gap: 2em;
+  border-bottom: 1.3px solid black;
+  padding: 0 3.625em;
+  .logo {
+    cursor: pointer;
+    flex: 1 auto;
+    img {
+      width: 15em;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 1.2em;
+    font-size: 17px;
+    align-items: center;
+    .GetStarted {
+      padding: 4px 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+      transition: 0.3s ease-in-out;
+
+      img {
+        width: 2em;
+        height: 2em;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      span {
+        text-transform: capitalize;
+      }
+    }
+    span {
+      transition: 0.3s ease-in-out;
+    }
+    .ss:hover {
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      background-color: #5555;
+      border-radius: 10em;
+    }
+    .GetStarted:hover {
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      background-color: #5555;
+      border-radius: 10em;
+    }
+  }
+}
+
+.navbar.active {
+  background: white;
+  transition: 0.3s ease-in;
+}
