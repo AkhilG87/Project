@@ -1,6 +1,5 @@
 {
   "proxy": "http://localhost:4000",
-  "homepage": "https://AkhilG87.github.io/Project",
   "name": "fun",
   "version": "0.1.0",
   "private": true,

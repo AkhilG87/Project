@@ -9,9 +9,8 @@ const SignUp = () => {
   const password = useRef()
   const navigate = useNavigate()
   const clickHandler = async (e) => {
-    console.log(name.current)
     e.preventDefault()
-    const data = await axios.post(
+    await axios.post(
       'http://localhost:4000/auth/signup',
       {
         name: name.current.value,
@@ -22,7 +21,6 @@ const SignUp = () => {
         withCredentials: true,
       },
     )
-    console.log(data)
     navigate('/login')
   }
 
