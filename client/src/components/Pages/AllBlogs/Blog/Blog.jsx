@@ -22,9 +22,10 @@ const Blog = ({ date, name, title, desc, path }) => {
         <div className="heading">
           <span>{title}</span>
         </div>
-        <div className="desc">
+        <div className="desc" dangerouslySetInnerHTML={{ __html: desc }}></div>
+        {/* <div className="desc">
           <span>{desc}</span>
-        </div>
+        </div> */}
       </div>
       <div className="right1">
         <img
