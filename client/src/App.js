@@ -50,28 +50,28 @@ function App() {
     {
       path: '/blogs/new',
       element: (
-        <div>
+        <ProtectedRoute>
           <Navbar />
           <Write />
-        </div>
+        </ProtectedRoute>
       ),
     },
     {
       path: '/blogs/:id',
       element: (
-        <div>
+        <ProtectedRoute>
           <Navbar />
           <Show />
-        </div>
+        </ProtectedRoute>
       ),
     },
     {
       path: '/blogs/:id/edit',
       element: (
-        <div>
+        <ProtectedRoute>
           <Navbar />
           <Write />
-        </div>
+        </ProtectedRoute>
       ),
     },
   ])
